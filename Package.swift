@@ -6,7 +6,8 @@ import PackageDescription
 let package = Package(
     name: "aiReachability",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v12),
+        .macOS(.v10_15),
     ],
     products: [
         .library(name: "aiReachability", targets: ["aiReachability"]),
