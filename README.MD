@@ -76,7 +76,7 @@ let networkMonitor = NetworkMonitor()
 print(networkMonitor.wifiState)
 
 // Check cellular network state
-print(networkMonitor.wifiState)
+print(networkMonitor.cellularState)
 ```
 
 
