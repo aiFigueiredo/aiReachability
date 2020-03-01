@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Wifi Network State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6c-CV-OEt">
+                                <rect key="frame" x="40" y="109" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUw-3d-Irl">
+                                <rect key="frame" x="332" y="170" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CellularNetworkState" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LE3-Cd-bBH">
+                                <rect key="frame" x="40" y="170" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgO-dM-fy1">
+                                <rect key="frame" x="332" y="109" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LL3-ba-0fX">
+                                <rect key="frame" x="161.5" y="265" width="91" height="30"/>
+                                <state key="normal" title="Update State"/>
+                                <connections>
+                                    <action selector="updateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ORy-wp-XuI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LL3-ba-0fX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="08Q-c9-LPr"/>
+                            <constraint firstItem="E6c-CV-OEt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="0e4-kQ-I5b"/>
+                            <constraint firstItem="kUw-3d-Irl" firstAttribute="trailing" secondItem="JgO-dM-fy1" secondAttribute="trailing" id="3sG-VS-fdY"/>
+                            <constraint firstItem="JgO-dM-fy1" firstAttribute="centerY" secondItem="E6c-CV-OEt" secondAttribute="centerY" id="COG-xW-Eby"/>
+                            <constraint firstItem="LE3-Cd-bBH" firstAttribute="top" secondItem="E6c-CV-OEt" secondAttribute="bottom" constant="40" id="I2O-JQ-CYj"/>
+                            <constraint firstItem="LE3-Cd-bBH" firstAttribute="leading" secondItem="E6c-CV-OEt" secondAttribute="leading" id="JhU-YI-uP1"/>
+                            <constraint firstItem="E6c-CV-OEt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="VV3-9Z-Zuc"/>
+                            <constraint firstItem="kUw-3d-Irl" firstAttribute="leading" secondItem="LE3-Cd-bBH" secondAttribute="trailing" constant="20" id="bS4-9U-dsn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JgO-dM-fy1" secondAttribute="trailing" constant="40" id="hS3-Y2-Fvm"/>
+                            <constraint firstItem="LE3-Cd-bBH" firstAttribute="width" secondItem="E6c-CV-OEt" secondAttribute="width" id="obm-Rq-2AI"/>
+                            <constraint firstItem="kUw-3d-Irl" firstAttribute="centerY" secondItem="LE3-Cd-bBH" secondAttribute="centerY" id="sJ0-3F-e6o"/>
+                            <constraint firstItem="JgO-dM-fy1" firstAttribute="leading" secondItem="E6c-CV-OEt" secondAttribute="trailing" constant="20" id="tnO-UC-D85"/>
+                            <constraint firstItem="LL3-ba-0fX" firstAttribute="top" secondItem="LE3-Cd-bBH" secondAttribute="bottom" constant="74" id="wm5-zi-noV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cellularStateLabel" destination="kUw-3d-Irl" id="KcP-JY-UE0"/>
+                        <outlet property="wifiStateLabel" destination="JgO-dM-fy1" id="WyI-IL-h5O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
