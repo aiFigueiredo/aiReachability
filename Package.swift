@@ -13,6 +13,5 @@ let package = Package(
     ],
     targets: [
         .target(name: "aiReachability", dependencies: [], path: "aiReachability/aiReachability"),
-        .testTarget(name: "aiReachabilityTests", dependencies: ["aiReachability"], path: "aiReachability/aiReachabilityTests"),
     ]
 )
