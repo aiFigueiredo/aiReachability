@@ -7,31 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53A63FDA240C309D00A6D8BC /* aiReachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A63FD0240C309D00A6D8BC /* aiReachability.framework */; };
-		53A63FDF240C309D00A6D8BC /* aiReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FDE240C309D00A6D8BC /* aiReachabilityTests.swift */; };
 		53A63FE1240C309D00A6D8BC /* aiReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A63FD3240C309D00A6D8BC /* aiReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53A63FEB240C30E900A6D8BC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEA240C30E900A6D8BC /* NetworkMonitor.swift */; };
 		53A63FED240C30F800A6D8BC /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEC240C30F800A6D8BC /* NetworkState.swift */; };
 		53A63FEF240C312100A6D8BC /* NWPathMonitorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		53A63FDB240C309D00A6D8BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53A63FC7240C309D00A6D8BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53A63FCF240C309D00A6D8BC;
-			remoteInfo = aiReachability;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		53A63FD0240C309D00A6D8BC /* aiReachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = aiReachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A63FD3240C309D00A6D8BC /* aiReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aiReachability.h; sourceTree = "<group>"; };
 		53A63FD4240C309D00A6D8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53A63FD9240C309D00A6D8BC /* aiReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aiReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		53A63FDE240C309D00A6D8BC /* aiReachabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aiReachabilityTests.swift; sourceTree = "<group>"; };
-		53A63FE0240C309D00A6D8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53A63FEA240C30E900A6D8BC /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		53A63FEC240C30F800A6D8BC /* NetworkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
 		53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPathMonitorWrapper.swift; sourceTree = "<group>"; };
@@ -45,14 +30,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53A63FD6240C309D00A6D8BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53A63FDA240C309D00A6D8BC /* aiReachability.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,7 +37,6 @@
 			isa = PBXGroup;
 			children = (
 				53A63FD2240C309D00A6D8BC /* aiReachability */,
-				53A63FDD240C309D00A6D8BC /* aiReachabilityTests */,
 				53A63FD1240C309D00A6D8BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				53A63FD0240C309D00A6D8BC /* aiReachability.framework */,
-				53A63FD9240C309D00A6D8BC /* aiReachabilityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,15 +59,6 @@
 				53A63FD4240C309D00A6D8BC /* Info.plist */,
 			);
 			path = aiReachability;
-			sourceTree = "<group>";
-		};
-		53A63FDD240C309D00A6D8BC /* aiReachabilityTests */ = {
-			isa = PBXGroup;
-			children = (
-				53A63FDE240C309D00A6D8BC /* aiReachabilityTests.swift */,
-				53A63FE0240C309D00A6D8BC /* Info.plist */,
-			);
-			path = aiReachabilityTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +79,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53A63FE4240C309D00A6D8BC /* Build configuration list for PBXNativeTarget "aiReachability" */;
 			buildPhases = (
+				537ABBD2240C421700B5E3C4 /* Swiftlint */,
 				53A63FCB240C309D00A6D8BC /* Headers */,
 				53A63FCC240C309D00A6D8BC /* Sources */,
 				53A63FCD240C309D00A6D8BC /* Frameworks */,
@@ -127,24 +94,6 @@
 			productReference = 53A63FD0240C309D00A6D8BC /* aiReachability.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		53A63FD8240C309D00A6D8BC /* aiReachabilityTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53A63FE7240C309D00A6D8BC /* Build configuration list for PBXNativeTarget "aiReachabilityTests" */;
-			buildPhases = (
-				53A63FD5240C309D00A6D8BC /* Sources */,
-				53A63FD6240C309D00A6D8BC /* Frameworks */,
-				53A63FD7240C309D00A6D8BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53A63FDC240C309D00A6D8BC /* PBXTargetDependency */,
-			);
-			name = aiReachabilityTests;
-			productName = aiReachabilityTests;
-			productReference = 53A63FD9240C309D00A6D8BC /* aiReachabilityTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,9 +107,6 @@
 					53A63FCF240C309D00A6D8BC = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
-					};
-					53A63FD8240C309D00A6D8BC = {
-						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
@@ -178,7 +124,6 @@
 			projectRoot = "";
 			targets = (
 				53A63FCF240C309D00A6D8BC /* aiReachability */,
-				53A63FD8240C309D00A6D8BC /* aiReachabilityTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,14 +136,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53A63FD7240C309D00A6D8BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		537ABBD2240C421700B5E3C4 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53A63FCC240C309D00A6D8BC /* Sources */ = {
@@ -211,23 +170,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53A63FD5240C309D00A6D8BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53A63FDF240C309D00A6D8BC /* aiReachabilityTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		53A63FDC240C309D00A6D8BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53A63FCF240C309D00A6D8BC /* aiReachability */;
-			targetProxy = 53A63FDB240C309D00A6D8BC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		53A63FE2240C309D00A6D8BC /* Debug */ = {
@@ -399,42 +342,6 @@
 			};
 			name = Release;
 		};
-		53A63FE8240C309D00A6D8BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = aiReachabilityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.josefigueiredo.aiReachabilityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		53A63FE9240C309D00A6D8BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = aiReachabilityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.josefigueiredo.aiReachabilityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -452,15 +359,6 @@
 			buildConfigurations = (
 				53A63FE5240C309D00A6D8BC /* Debug */,
 				53A63FE6240C309D00A6D8BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53A63FE7240C309D00A6D8BC /* Build configuration list for PBXNativeTarget "aiReachabilityTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53A63FE8240C309D00A6D8BC /* Debug */,
-				53A63FE9240C309D00A6D8BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
