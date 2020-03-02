@@ -11,6 +11,8 @@
 		53A63FEB240C30E900A6D8BC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEA240C30E900A6D8BC /* NetworkMonitor.swift */; };
 		53A63FED240C30F800A6D8BC /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEC240C30F800A6D8BC /* NetworkState.swift */; };
 		53A63FEF240C312100A6D8BC /* NWPathMonitorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */; };
+		E0DB4AEB240D69E400B1B035 /* ReachabilityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4AEA240D69E400B1B035 /* ReachabilityState.swift */; };
+		E0DB4AED240D6A2A00B1B035 /* NWPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4AEC240D6A2A00B1B035 /* NWPathExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		53A63FEA240C30E900A6D8BC /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		53A63FEC240C30F800A6D8BC /* NetworkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
 		53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPathMonitorWrapper.swift; sourceTree = "<group>"; };
+		E0DB4AEA240D69E400B1B035 /* ReachabilityState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityState.swift; sourceTree = "<group>"; };
+		E0DB4AEC240D6A2A00B1B035 /* NWPathExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPathExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				53A63FEC240C30F800A6D8BC /* NetworkState.swift */,
 				53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */,
 				53A63FD4240C309D00A6D8BC /* Info.plist */,
+				E0DB4AEA240D69E400B1B035 /* ReachabilityState.swift */,
+				E0DB4AEC240D6A2A00B1B035 /* NWPathExtensions.swift */,
 			);
 			path = aiReachability;
 			sourceTree = "<group>";
@@ -164,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DB4AEB240D69E400B1B035 /* ReachabilityState.swift in Sources */,
 				53A63FED240C30F800A6D8BC /* NetworkState.swift in Sources */,
 				53A63FEF240C312100A6D8BC /* NWPathMonitorWrapper.swift in Sources */,
+				E0DB4AED240D6A2A00B1B035 /* NWPathExtensions.swift in Sources */,
 				53A63FEB240C30E900A6D8BC /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
