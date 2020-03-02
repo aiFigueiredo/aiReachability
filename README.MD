@@ -82,7 +82,7 @@ print(networkMonitor.cellularState)
 
 ## Contributing
 
-Feel free to contribute to this project by opening  [issues](https://github.com/aiFigueiredo/aiReachability/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) or opening [pull requests](https://github.com/aiFigueiredo/aiReachability/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
+Feel free to contribute to this project by opening [issues](https://github.com/aiFigueiredo/aiReachability/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) or opening [pull requests](https://github.com/aiFigueiredo/aiReachability/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
 
 
 ## License
