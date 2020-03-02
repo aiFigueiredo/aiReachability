@@ -30,12 +30,12 @@ This framework is a wrapper around the [`NWPathMonitor`](https://developer.apple
 
 Just add the following line to your `PodFile`:
 
-```
+```ruby
 pod 'aiReachability'
 ```
 And then run the following command on the terminal:
 
-```
+```bash
 pod install
 ```
 
@@ -49,7 +49,7 @@ github "aiFigueiredo/aiReachability"
 
 And then run the following command on the terminal:
 
-```
+```bash
 carthage update
 ```
 
@@ -57,7 +57,7 @@ carthage update
 
 Add the package to your `Package.swift` file, under dependencies:
 
-```
+```swift
 dependencies: [
     .package(url: "https://github.com/aiFigueiredo/aiReachability.git", from: "1.0.0")
 ]
