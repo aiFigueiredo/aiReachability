@@ -12,7 +12,7 @@ import Network
 /// Uses a `NWPathMonitor` Wrapper to monitorize the network once this object is initialized
 public class NetworkMonitor {
 
-    public typealias Listener = (ReachabilityState) -> Void
+    public typealias NetworkUpdateHandler = (ReachabilityState) -> Void
 
     private let monitor = NWPathMonitorWrapper()
 
@@ -23,20 +23,11 @@ public class NetworkMonitor {
     public var cellularState: NetworkState = .unknown
 
     /// Property that defines the listener
-    public var listener: Listener?
+    public var networkUpdateHandler: NetworkUpdateHandler?
 
     /// Main initializer for `NetworkMonitor` class
     /// Triggers monitor to start
     public init() {
-        start()
-    }
-
-    /// Initializer for `NetworkMonitor` class
-    /// * @param listener
-    /// * A listener to handle new updates.
-    /// * This parameter is mandatory.
-    public init(listener: @escaping Listener) {
-        self.listener = listener
         start()
     }
 
@@ -52,10 +43,12 @@ public class NetworkMonitor {
     }
 
     private func handleUpdate(path: NWPath) {
-        let reachabilityState = path.reachabilityState
+        let reachabilityState = ReachabilityState(path: path)
         wifiState = reachabilityState.contains(.wifi) ? .connected : .disconnected
         cellularState = reachabilityState.contains(.cellular) ? .connected : .disconnected
 
-        listener?(reachabilityState)
+        DispatchQueue.main.async {
+            self.networkUpdateHandler?(reachabilityState)
+        }
     }
 }

@@ -24,12 +24,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        networkMonitor.listener = { status in
-            DispatchQueue.main.async {
-                self.wifiStateLabel.text = status.contains(.wifi) ? "Connected" : "Disconnected"
-                self.cellularStateLabel.text = status.contains(.cellular) ? "Connected" : "Disconnected"
-            }
+        networkMonitor.networkUpdateHandler = { status in
+            self.wifiStateLabel.text = status.contains(.wifi) ? "Connected" : "Disconnected"
+            self.cellularStateLabel.text = status.contains(.cellular) ? "Connected" : "Disconnected" 
         }
+        
         setUpLabels()
     }
 
