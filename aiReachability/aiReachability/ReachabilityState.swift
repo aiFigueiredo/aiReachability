@@ -13,10 +13,14 @@ import Network
 public struct ReachabilityState: OptionSet {
     public let rawValue: Int
 
+    /// Main initializer for `ReachabilityState` struct
+    /// - Parameter rawValue: The raw value of the reachability state
     public init(rawValue: Int) {
         self.rawValue = rawValue
     }
 
+    /// Initializer for `ReachabilityState` struct
+    /// - Parameter path: The object with network properties to be evaluated
     public init(path: NWPath) {
         var reachabilityState = ReachabilityState()
 

@@ -12,6 +12,7 @@ import Network
 /// Uses a `NWPathMonitor` Wrapper to monitorize the network once this object is initialized
 public class NetworkMonitor {
 
+    /// A handler that receives network updates
     public typealias NetworkUpdateHandler = (ReachabilityState) -> Void
 
     private let monitor = NWPathMonitorWrapper()
