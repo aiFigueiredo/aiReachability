@@ -21,7 +21,8 @@ This framework is a wrapper around the [`NWPathMonitor`](https://developer.apple
 
 
 ## Features
-* Gather both wifi and cellular network state synchronosly.
+* Gather both wifi and cellular network state synchronosly
+* Unit Tests
 
 
 ## Installation
