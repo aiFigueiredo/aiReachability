@@ -15,6 +15,8 @@
 		53A63FEF240C312100A6D8BC /* NWPathMonitorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */; };
 		E0DB4AEB240D69E400B1B035 /* ReachabilityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4AEA240D69E400B1B035 /* ReachabilityState.swift */; };
 		53A63FEF240C312100A6D8BC /* NetworkExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEE240C312100A6D8BC /* NetworkExtensions.swift */; };
+		53C236F6240DCA4B007CB06F /* aiReachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A63FD0240C309D00A6D8BC /* aiReachability.framework */; };
+		53C236FC240DCFC9007CB06F /* NetworkMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C236F3240DCA4B007CB06F /* NetworkMonitorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPathMonitorWrapper.swift; sourceTree = "<group>"; };
 		E0DB4AEA240D69E400B1B035 /* ReachabilityState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityState.swift; sourceTree = "<group>"; };
 		53A63FEE240C312100A6D8BC /* NetworkExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExtensions.swift; sourceTree = "<group>"; };
+		53C236F1240DCA4B007CB06F /* aiReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aiReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C236F3240DCA4B007CB06F /* NetworkMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorTests.swift; sourceTree = "<group>"; };
 		53C236F5240DCA4B007CB06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +102,7 @@
 				53C236F5240DCA4B007CB06F /* Info.plist */,
 				538610A3241D427A00C36E89 /* MockPathMonitorProtocol.swift */,
 				538610A5241D42AE00C36E89 /* MockPathProtocol.swift */,
+				53C236F3240DCA4B007CB06F /* NetworkMonitorTests.swift */,
 			);
 			path = aiReachabilityTests;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				538610A6241D42AE00C36E89 /* MockPathProtocol.swift in Sources */,
+				53C236FC240DCFC9007CB06F /* NetworkMonitorTests.swift in Sources */,
 				538610A4241D427A00C36E89 /* MockPathMonitorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
