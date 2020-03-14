@@ -79,4 +79,23 @@ class NetworkMonitorTests: XCTestCase {
     func testUpdateHandler_unsatisfiedAndIsExpensiveTrue_wifiDisconnectedCellularDisconnected() {
         validateUpdateHandler(status: .unsatisfied, isExpensive: false)
     }
+
+    func testNetworkUpdateHandler() {
+        let expectation = self.expectation(description: "testNetworkUpdateHandler")
+        sut = NetworkMonitor(monitor: mockMonitor)
+
+        sut.networkUpdateHandler = { status in
+            expectation.fulfill()
+        }
+
+        guard let updateHandler = mockMonitor.updateHandler else {
+            XCTFail("updateHandler must not be nil")
+            return
+        }
+
+        let mockPath = MockPathProtocol(status: .satisfied, isExpensive: true)
+        updateHandler(mockPath)
+
+        wait(for: [expectation], timeout: 5.0)
+    }
 }
