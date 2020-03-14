@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		538610A4241D427A00C36E89 /* MockPathMonitorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538610A3241D427A00C36E89 /* MockPathMonitorProtocol.swift */; };
+		538610A6241D42AE00C36E89 /* MockPathProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538610A5241D42AE00C36E89 /* MockPathProtocol.swift */; };
 		53A63FE1240C309D00A6D8BC /* aiReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A63FD3240C309D00A6D8BC /* aiReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53A63FEB240C30E900A6D8BC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEA240C30E900A6D8BC /* NetworkMonitor.swift */; };
 		53A63FED240C30F800A6D8BC /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEC240C30F800A6D8BC /* NetworkState.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		538610A3241D427A00C36E89 /* MockPathMonitorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPathMonitorProtocol.swift; sourceTree = "<group>"; };
+		538610A5241D42AE00C36E89 /* MockPathProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPathProtocol.swift; sourceTree = "<group>"; };
 		53A63FD0240C309D00A6D8BC /* aiReachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = aiReachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A63FD3240C309D00A6D8BC /* aiReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aiReachability.h; sourceTree = "<group>"; };
 		53A63FD4240C309D00A6D8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				53C236F5240DCA4B007CB06F /* Info.plist */,
+				538610A3241D427A00C36E89 /* MockPathMonitorProtocol.swift */,
+				538610A5241D42AE00C36E89 /* MockPathProtocol.swift */,
 			);
 			path = aiReachabilityTests;
 			sourceTree = "<group>";
@@ -232,6 +238,15 @@
 				53A63FED240C30F800A6D8BC /* NetworkState.swift in Sources */,
 				53A63FEF240C312100A6D8BC /* NetworkExtensions.swift in Sources */,
 				53A63FEB240C30E900A6D8BC /* NetworkMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C236ED240DCA4B007CB06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538610A6241D42AE00C36E89 /* MockPathProtocol.swift in Sources */,
+				538610A4241D427A00C36E89 /* MockPathMonitorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
