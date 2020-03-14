@@ -8,23 +8,19 @@
 
 import Network
 
-@available(iOS 12.0, *)
 public protocol PathProtocol {
     var status: NWPath.Status { get }
     var isExpensive: Bool { get }
 }
 
-@available(iOS 12.0, *)
 extension NWPath: PathProtocol {}
 
-@available(iOS 12.0, *)
 public protocol PathMonitorProtocol {
     var updateHandler: ((PathProtocol) -> Void)? { get set }
     func start(queue: DispatchQueue)
     func cancel()
 }
 
-@available(iOS 12.0, *)
 extension NWPathMonitor: PathMonitorProtocol {
     public var updateHandler: ((PathProtocol) -> Void)? {
         get {
