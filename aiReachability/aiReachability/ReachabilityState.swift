@@ -21,7 +21,7 @@ public struct ReachabilityState: OptionSet {
 
     /// Initializer for `ReachabilityState` struct
     /// - Parameter path: The object with network properties to be evaluated
-    public init(path: NWPath) {
+    public init(path: PathProtocol) {
         var reachabilityState = ReachabilityState()
 
         if path.isExpensive { reachabilityState.insert(.cellular) }

@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		538610A4241D427A00C36E89 /* MockPathMonitorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538610A3241D427A00C36E89 /* MockPathMonitorProtocol.swift */; };
+		538610A6241D42AE00C36E89 /* MockPathProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538610A5241D42AE00C36E89 /* MockPathProtocol.swift */; };
 		53A63FE1240C309D00A6D8BC /* aiReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A63FD3240C309D00A6D8BC /* aiReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53A63FEB240C30E900A6D8BC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEA240C30E900A6D8BC /* NetworkMonitor.swift */; };
 		53A63FED240C30F800A6D8BC /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEC240C30F800A6D8BC /* NetworkState.swift */; };
 		53A63FEF240C312100A6D8BC /* NWPathMonitorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */; };
 		E0DB4AEB240D69E400B1B035 /* ReachabilityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB4AEA240D69E400B1B035 /* ReachabilityState.swift */; };
+		53A63FEF240C312100A6D8BC /* NetworkExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A63FEE240C312100A6D8BC /* NetworkExtensions.swift */; };
+		53C236F6240DCA4B007CB06F /* aiReachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A63FD0240C309D00A6D8BC /* aiReachability.framework */; };
+		53C236FC240DCFC9007CB06F /* NetworkMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C236F3240DCA4B007CB06F /* NetworkMonitorTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		53C236F7240DCA4B007CB06F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53A63FC7240C309D00A6D8BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A63FCF240C309D00A6D8BC;
+			remoteInfo = aiReachability;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		538610A3241D427A00C36E89 /* MockPathMonitorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPathMonitorProtocol.swift; sourceTree = "<group>"; };
+		538610A5241D42AE00C36E89 /* MockPathProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPathProtocol.swift; sourceTree = "<group>"; };
 		53A63FD0240C309D00A6D8BC /* aiReachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = aiReachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A63FD3240C309D00A6D8BC /* aiReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aiReachability.h; sourceTree = "<group>"; };
 		53A63FD4240C309D00A6D8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -22,6 +39,10 @@
 		53A63FEC240C30F800A6D8BC /* NetworkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
 		53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPathMonitorWrapper.swift; sourceTree = "<group>"; };
 		E0DB4AEA240D69E400B1B035 /* ReachabilityState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityState.swift; sourceTree = "<group>"; };
+		53A63FEE240C312100A6D8BC /* NetworkExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExtensions.swift; sourceTree = "<group>"; };
+		53C236F1240DCA4B007CB06F /* aiReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aiReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C236F3240DCA4B007CB06F /* NetworkMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitorTests.swift; sourceTree = "<group>"; };
+		53C236F5240DCA4B007CB06F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +53,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53C236EE240DCA4B007CB06F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C236F6240DCA4B007CB06F /* aiReachability.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				53A63FD2240C309D00A6D8BC /* aiReachability */,
+				53C236F2240DCA4B007CB06F /* aiReachabilityTests */,
 				53A63FD1240C309D00A6D8BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				53A63FD0240C309D00A6D8BC /* aiReachability.framework */,
+				53C236F1240DCA4B007CB06F /* aiReachabilityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,9 +90,21 @@
 				53A63FEC240C30F800A6D8BC /* NetworkState.swift */,
 				53A63FEE240C312100A6D8BC /* NWPathMonitorWrapper.swift */,
 				E0DB4AEA240D69E400B1B035 /* ReachabilityState.swift */,
+				53A63FEE240C312100A6D8BC /* NetworkExtensions.swift */,
 				53A63FD4240C309D00A6D8BC /* Info.plist */,
 			);
 			path = aiReachability;
+			sourceTree = "<group>";
+		};
+		53C236F2240DCA4B007CB06F /* aiReachabilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				53C236F5240DCA4B007CB06F /* Info.plist */,
+				538610A3241D427A00C36E89 /* MockPathMonitorProtocol.swift */,
+				538610A5241D42AE00C36E89 /* MockPathProtocol.swift */,
+				53C236F3240DCA4B007CB06F /* NetworkMonitorTests.swift */,
+			);
+			path = aiReachabilityTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +140,24 @@
 			productReference = 53A63FD0240C309D00A6D8BC /* aiReachability.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		53C236F0240DCA4B007CB06F /* aiReachabilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C236FB240DCA4B007CB06F /* Build configuration list for PBXNativeTarget "aiReachabilityTests" */;
+			buildPhases = (
+				53C236ED240DCA4B007CB06F /* Sources */,
+				53C236EE240DCA4B007CB06F /* Frameworks */,
+				53C236EF240DCA4B007CB06F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53C236F8240DCA4B007CB06F /* PBXTargetDependency */,
+			);
+			name = aiReachabilityTests;
+			productName = aiReachabilityTests;
+			productReference = 53C236F1240DCA4B007CB06F /* aiReachabilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +171,9 @@
 					53A63FCF240C309D00A6D8BC = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
+					};
+					53C236F0240DCA4B007CB06F = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
@@ -127,12 +191,20 @@
 			projectRoot = "";
 			targets = (
 				53A63FCF240C309D00A6D8BC /* aiReachability */,
+				53C236F0240DCA4B007CB06F /* aiReachabilityTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		53A63FCE240C309D00A6D8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C236EF240DCA4B007CB06F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -169,12 +241,30 @@
 			files = (
 				E0DB4AEB240D69E400B1B035 /* ReachabilityState.swift in Sources */,
 				53A63FED240C30F800A6D8BC /* NetworkState.swift in Sources */,
-				53A63FEF240C312100A6D8BC /* NWPathMonitorWrapper.swift in Sources */,
+				53A63FEF240C312100A6D8BC /* NetworkExtensions.swift in Sources */,
 				53A63FEB240C30E900A6D8BC /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53C236ED240DCA4B007CB06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538610A6241D42AE00C36E89 /* MockPathProtocol.swift in Sources */,
+				53C236FC240DCFC9007CB06F /* NetworkMonitorTests.swift in Sources */,
+				538610A4241D427A00C36E89 /* MockPathMonitorProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53C236F8240DCA4B007CB06F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53A63FCF240C309D00A6D8BC /* aiReachability */;
+			targetProxy = 53C236F7240DCA4B007CB06F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		53A63FE2240C309D00A6D8BC /* Debug */ = {
@@ -350,6 +440,42 @@
 			};
 			name = Release;
 		};
+		53C236F9240DCA4B007CB06F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = aiReachabilityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josefigueiredo.aiReachabilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53C236FA240DCA4B007CB06F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = aiReachabilityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josefigueiredo.aiReachabilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,6 +493,15 @@
 			buildConfigurations = (
 				53A63FE5240C309D00A6D8BC /* Debug */,
 				53A63FE6240C309D00A6D8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53C236FB240DCA4B007CB06F /* Build configuration list for PBXNativeTarget "aiReachabilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C236F9240DCA4B007CB06F /* Debug */,
+				53C236FA240DCA4B007CB06F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
