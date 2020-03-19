@@ -26,7 +26,7 @@ This framework is a wrapper around the [`NWPathMonitor`](https://developer.apple
 
 
 ## Known Issues ⚠️
-* While using the simulator, sometimes when a network state change occurs (off to on), the network state its not correctly relayed to the hosting app. This does not occur when using a real device
+* While using the simulator, sometimes when a network state change occurs it's not correctly relayed to the hosting app. This does not occur when using a real device.
 
 
 ## Installation
