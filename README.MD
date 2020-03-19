@@ -25,6 +25,10 @@ This framework is a wrapper around the [`NWPathMonitor`](https://developer.apple
 * Unit Tests
 
 
+## Known Issues ⚠️
+* While using the simulator, sometimes when a network state change occurs (off to on), the network state its not correctly relayed to the hosting app. This does not occur when using a real device
+
+
 ## Installation
 
 ### - [CocoaPods](https://cocoapods.org)
